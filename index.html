@@ -1,1 +1,254 @@
-Hello world :^)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NASA LEC Senior Design Homepage</title>
+
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> 
+
+    <link href="/resources/css/styles.css" rel="stylesheet">
+
+    <script src="resources/js/particles.js"></script>
+
+</head>
+
+<style>
+
+    body {
+        margin: 0;
+
+        font-family: 'Roboto';
+        color: white;
+    }
+
+    canvas {
+        display: block;
+        vertical-align: bottom;
+    }
+
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    #content {
+        font-family: 'Source Sans Pro';
+        font-size: 1.3em;
+        position: absolute;
+        z-index: 10;
+        width: 1000px;
+        background: lightslategray;
+        top: 30%;
+        left: 30%;
+        margin: -110px 0 0 -100px;
+        padding: 20px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Comfortaa', cursive;
+
+</style>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <div id="content">
+    
+        <h3>NASA LEC Software Senior Design Team Homepage</h3>
+
+        <center>
+            <TABLE border=1><TBODY>
+                <TR align=center>
+                    <TD>Project Name</TD>
+                    <TD>...</TD>
+                <TR align=center>
+                    <TD>Team Members and Email Addresses</TD>
+                    <TD>...</TD>
+                <TR align=center>
+                    <TD>Faculty Advisor</TD>
+                    <TD>...</TD></TR>
+            </TBODY></TABLE>
+        </center>
+        <p>
+        <center>
+        <h3>First Semester</h3>
+            <TABLE border=1><TBODY>
+                <TR align=center>
+                    <TD>Plan (Aug 31)</TD>
+                    <TD><a href="plan1.pdf">Plan</a>, <a href="plan1Pres.pdf">Presentation</a></TD>
+                <TR align=center>
+                    <TD>Milestone 1 (Sep 28)</TD>
+                    <TD><a href="requirement.pdf">Requirement</a>, <a href="design.pdf">Design</a>, <a href="test.pdf">Test</a>, <a href="milestone1.pdf">Presentation</a>, <a href="eval1.pdf">Progress Evaluation</a></TD>
+                <TR align=center>
+                    <TD>Milestone 2 (Oct 26)</TD>
+                    <TD><a href="milestone3.pdf">Presentation</a>, <a href="eval2.pdf">Progress Evaluation</a></TD></TR>
+                <TR align=center>
+                    <TD>Milestone 3 (Nov 23)</TD>
+                    <TD><a href="milestone3.pdf">Presentation</a>, <a href="eval3.pdf">Progress Evaluation</a></TD></TR>
+            </TBODY></TABLE>
+        </center>
+
+        <center>
+
+        <h3>Second Semester</h3>
+
+            <TABLE border=1><TBODY>
+                <TR align=center>
+                    <TD>Plan (Jan 22)</TD>
+                    <TD><a href="plan2.pdf">Plan</a>, <a href="plan2Pres.pdf">Presentation</a></TD>
+                <TR align=center>
+                    <TD>Milestone 4 (Feb 17)</TD>
+                    <TD><a href="milestone4.pdf">Presentation</a>, <a href="eval4.pdf">Progress Evaluation</a></TD>
+                <TR align=center>
+                    <TD>Milestone 5 (Mar 23)</TD>
+                    <TD><a href="poster.pdf">Poster</a>, <a href="ebook.pdf">e-book page</a>, <a href="milestone5.pdf">Presentation</a>, <a href="eval5.pdf">Progress Evaluation</a></TD></TR>
+                <TR align=center>
+                    <TD>Milestone 6 (Apr 20)</TD>
+                    <TD><a href="userManual.pdf">User/Developer Manual</a>, <a href="demoVideo.jpg">Demo Video</a>, <a href="milestone6.pdf">Presentation</a>, <a href="eval6.pdf">Progress Evaluation</a></TD></TR>
+            </TBODY></TABLE>
+        </center>
+
+    </div>
+
+</body>
+
+<script>
+
+//Thanks to https://vincentgarreau.com/particles.js!
+
+/* ---- particles.js config ---- */
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+</script>
+
+</html>
